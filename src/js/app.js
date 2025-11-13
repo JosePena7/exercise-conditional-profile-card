@@ -47,10 +47,22 @@ function render(variables = {}) {
                 ? "left"
                 : "right"
             }">
-            <li><a href="https://twitter.com/4geeksacademy"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://github.com/4geeksacademy"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/school/4geeksacademy"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/4geeksacademy"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/${
+              variables.twitter ? variables.twitter : "/JosePena116284"
+            }"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://github.com/${
+              variables.github ? variables.github : "/JosePena7"
+            }"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://linkedin.com/${
+              variables.linkedin
+                ? variables.linkedin
+                : "/in/jose-peña-998584395/"
+            }"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://instagram.com/${
+              variables.instagram
+                ? variables.instagram
+                : "/jose.juanpenasegura/"
+            }"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
